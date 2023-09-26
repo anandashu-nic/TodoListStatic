@@ -1,0 +1,89 @@
+/* align all the content center of the page */
+body {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e4f1ff;
+}
+
+/* outerBOX of the input field */
+.outerBox {
+  border-radius: 5px;
+  min-width: 100vh;
+  padding: 1rem;
+  z-index: 1000;
+}
+.outerBox:hover {
+  border: 2px solid rgb(30, 48, 80);
+  box-shadow: 0 0 10px rgb(30, 48, 80);
+}
+
+/* styling the horizontal line below the TodoList heading */
+hr {
+  border: 2px solid rgb(30, 48, 80);
+  background-color: rgb(30, 48, 80);
+}
+
+/* styling the feature Button */
+.featuresButton {
+  display: flex;
+  justify-content: space-between;
+}
+.textLabel {
+  display: flex;
+  justify-content: space-between;
+}
+/* styling the add button to change when hover */
+.addList:hover {
+  background-color: rgb(30, 48, 80);
+  .addIcon {
+    color: #fff;
+  }
+}
+.addList {
+  margin-left: 3rem;
+}
+
+/* striking through text on checked of checbox */
+input[type="checkbox"]:checked ~ .form-check-label {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* styling the delete and checkbox icon to change when hover */
+.form-check-label {
+  margin-left: 0.5rem;
+}
+.fa-xmark {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+/* styling the footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+/* styling the button to change when hover */
+button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: rgb(30, 48, 80);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid rgb(30, 48, 80);
+}
+button:hover {
+  background-color: rgb(30, 48, 80);
+  transition: background-color 0.3s;
+  color: white;
+}
