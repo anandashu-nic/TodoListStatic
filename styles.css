@@ -11,9 +11,10 @@ body {
 /* outerBOX of the input field */
 .outerBox {
   border-radius: 5px;
-  min-width: 100vh;
+  min-height: 50vh;
+  min-width: 50vw;
   padding: 1rem;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 .outerBox:hover {
   border: 2px solid rgb(30, 48, 80);
